@@ -29,7 +29,7 @@ This project implements a Graph Retrieval-Augmented Generation (GraphRAG) system
 1. **Clone the repository**
    ```bash
    git clone https://github.com/trungthanhnguyenn/graphRAG.git
-   cd graph-RAG
+   cd graphRAG
    ```
 
 2. **Install Python dependencies**
