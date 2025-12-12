@@ -28,7 +28,7 @@ This project implements a Graph Retrieval-Augmented Generation (GraphRAG) system
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/trungthanhnguyenn/graphRAG.git
    cd graph-RAG
    ```
 
@@ -68,7 +68,7 @@ chmod +x run_pipeline.sh
 
 2. **Ingest Data**
    ```bash
-   python dataprocess.py test.docx
+   python dataprocess.py path/to/your/document.docx
    ```
 
 3. **Query the Graph**
