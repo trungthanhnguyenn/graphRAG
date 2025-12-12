@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  neo4j:
+    image: neo4j:2025.10.1
+    container_name: neo4j_graphrag
+    restart: always
+    ports:
+      - "7474:7474" # HTTP
+      - "7687:7687" # Bolt protocol
+    environment:
+      - NEO4J_AUTH=${NEO4J_USERNAME:?err}/${NEO4J_PASSWORD:?err}
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_security_procedures_allowlist=apoc.*
+      - NEO4J_apoc_meta_data_enabled=true
+    volumes:
+      - ./neo4j_data:/data
+      - ./neo4j_logs:/logs
