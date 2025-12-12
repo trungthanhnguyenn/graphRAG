@@ -73,7 +73,7 @@ chmod +x run_pipeline.sh
 
 3. **Query the Graph**
    ```bash
-   python query_graph.py "LUMIR là gì?"
+   python query_graph.py
    ```
 
 ## 📂 Project Structure
